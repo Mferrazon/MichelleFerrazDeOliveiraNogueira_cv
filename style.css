@@ -1,18 +1,17 @@
 /*
-  CSS Renovado: Estilo Profissional e Amigável
-  - Paleta de cores baseada em azuis e cinzas claros.
+   - Paleta de cores baseada em azuis e cinzas claros.
   - Tipografia limpa e moderna com fontes padrão do sistema.
   - Sombras suaves e bordas arredondadas para um toque mais suave.
 */
 
 /* Configurações Globais */
 body {
-    /* Uma pilha de fontes moderna que prioriza a fonte nativa do sistema operacional. */
+    /* Fontes moderna que prioriza a fonte nativa do sistema operacional. */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ecf0f1; /* Um cinza muito claro e suave para o fundo. */
-    color: #34495e; /* Um cinza-azulado escuro para o texto, mais suave que o preto puro. */
+    background-color: #ecf0f1; 
+    color: #34495e; 
     line-height: 1.7; /* Mais espaço entre as linhas para facilitar a leitura. */
 }
 
@@ -77,18 +76,6 @@ main {
     border-bottom: 3px solid #3498db; /* Detalhe com a cor de destaque. */
     padding-bottom: 10px;
     margin-top: 0;
-}
-
-/* Animação de entrada mais suave */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 /* Estilo dos itens do Portfólio */
