@@ -1,0 +1,109 @@
+/* Este é um comentário em CSS. Explique suas escolhas de estilo aqui. */
+
+/* Reset básico e configurações globais com fontes padrão do sistema */
+body {
+    /* A propriedade 'font-family' agora usa uma lista de fontes comuns.
+       O navegador tentará usar a primeira (Arial), se não encontrar,
+       tentará a próxima (Helvetica), e assim por diante. 'sans-serif' é uma
+       opção genérica de segurança.
+    */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky; /* Deixa o menu fixo no topo ao rolar */
+    top: 0;
+    z-index: 1000; /* Garante que o menu fique sobre outros elementos */
+}
+
+.menu-link {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Efeito suave na transição */
+}
+
+/* Efeito visual ao passar o mouse sobre o link */
+.menu-link:hover, .menu-link.active-link {
+    background-color: #555;
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto; /* Centraliza o conteúdo principal */
+}
+
+.content-section {
+    display: none; /* Todas as seções começam escondidas */
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s; /* Animação de entrada */
+}
+
+.content-section.active {
+    display: block; /* A seção ativa é a única visível */
+}
+
+/* Animação simples para a troca de conteúdo */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Estilização do formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    /* Garante que o formulário também use a fonte padrão */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #333;
+    color: #fff;
+}
