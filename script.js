@@ -1,6 +1,3 @@
-// Este é um comentário em JavaScript. Explique a lógica do seu código aqui. [cite: 238]
-
-// Adicionamos um 'escutador' de eventos que espera o DOM (a página) carregar completamente.
 document.addEventListener('DOMContentLoaded', function() {
     
     // Seleciona todos os links do menu e todas as seções de conteúdo.
@@ -9,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Função para lidar com o clique em um link do menu.
     function handleMenuClick(event) {
-        // Previne o comportamento padrão do link (que seria recarregar a página).
+        // Previne o comportamento padrão do link
         event.preventDefault();
 
         const targetId = event.target.dataset.target;
