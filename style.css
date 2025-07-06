@@ -1,48 +1,48 @@
-/*- Paleta de cores baseada em azuis e cinzas claros.
-- Tipografia limpa e moderna com fontes padrão do sistema.
-- Sombras suaves e bordas arredondadas para um toque mais suave.
+/*
+- Paleta de cores baseada em azuis e cinzas claros
+- Tipografia limpa e moderna 
 */
 
-/* Configurações Globais */
+/* Configurações Gerais */
 body {
-    /* Fontes moderna que prioriza a fonte nativa do sistema operacional. */
+    /* Fontes moderna que prioriza a fonte nativa do sistema operacional */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ecf0f1; 
     color: #34495e; 
-    line-height: 1.7; /* Mais espaço entre as linhas para facilitar a leitura. */
+    line-height: 1.7; /* Mais espaço entre as linhas */
 }
 
 /* Cabeçalho e Menu de Navegação */
 header {
-    background-color: #ffffff; /* Fundo branco para um visual mais limpo. */
+    background-color: #ffffff; /* Fundo branco para um visual mais limpo */
     padding: 1rem 2rem;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid #dfe6e9; /* Uma linha sutil para separar o cabeçalho. */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra bem leve para dar profundidade. */
+    border-bottom: 1px solid #dfe6e9; /* Uma linha sutil para separar o cabeçalho */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra bem leve para dar profundidade */
 }
 
 .menu-link {
-    color: #2c3e50; /* Cor primária escura para os links do menu. */
+    color: #2c3e50; /* Cor primária escura para os links do menu */
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
     padding: 8px 15px;
-    border-radius: 20px; /* Bordas mais arredondadas para um ar amigável. */
-    transition: all 0.3s ease; /* Transição suave para todas as propriedades. */
+    border-radius: 20px; 
+    transition: all 0.3s ease; /* Transição suave para todas as propriedades */
     position: relative;
 }
 
 .menu-link:hover {
-    background-color: #3498db; /* Um azul vibrante para o hover. */
+    background-color: #3498db; /* Um azul forte para o hover */
     color: #ffffff;
 }
 
-/* Estilo especial para o link da página ativa. */
+/* Estilo especial para o link da página ativa */
 .menu-link.active-link {
     background-color: #2c3e50; /* Cor primária escura para destacar. */
     color: #ffffff;
@@ -58,9 +58,9 @@ main {
 .content-section {
     display: none;
     background-color: #ffffff;
-    padding: 2.5rem; /* Um pouco mais de espaço interno. */
+    padding: 2.5rem; /* Mais de espaço interno */
     border-radius: 8px;
-    /* Sombra mais suave e difundida. */
+    /* Sombra mais suave */
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     animation: fadeIn 0.5s ease-in-out;
 }
@@ -71,15 +71,15 @@ main {
 
 /* Títulos das seções */
 .content-section h1 {
-    color: #2c3e50; /* Cor primária nos títulos para consistência. */
-    border-bottom: 3px solid #3498db; /* Detalhe com a cor de destaque. */
+    color: #2c3e50; /* Cor primária nos títulos */
+    border-bottom: 3px solid #3498db; /* Detalhe com a cor de destaque */
     padding-bottom: 10px;
     margin-top: 0;
 }
 
-/* Estilo dos itens do Portfólio */
+/* Itens do Portfólio */
 .portfolio-item {
-    border-left: 4px solid #3498db; /* Barra lateral para destacar os projetos. */
+    border-left: 4px solid #3498db; /* Barra lateral para destacar cada projetos */
     padding-left: 15px;
     margin-bottom: 20px;
 }
@@ -102,7 +102,7 @@ form input, form textarea {
     margin-top: 5px;
     border-radius: 5px;
     border: 1px solid #dfe6e9;
-    font-family: inherit; /* Herda a fonte do 'body'. */
+    font-family: inherit; /* Herda a fonte do body */
     font-size: 1rem;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
@@ -115,7 +115,7 @@ form input:focus, form textarea:focus {
 }
 
 form button {
-    background: linear-gradient(45deg, #3498db, #2980b9); /* Um gradiente sutil. */
+    background: linear-gradient(45deg, #3498db, #2980b9); /* Um gradiente sutil */
     color: #ffffff;
     font-weight: bold;
     font-size: 1.1rem;
@@ -128,7 +128,7 @@ form button {
 }
 
 form button:hover {
-    transform: translateY(-2px); /* Efeito de 'levantar' o botão. */
+    transform: translateY(-2px); /* Efeito de suspender o botão */
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
@@ -137,6 +137,6 @@ footer {
     text-align: center;
     padding: 1.5rem;
     margin-top: 2rem;
-    background-color: #2c3e50; /* Cor primária escura para fechar o layout. */
-    color: #ecf0f1; /* Texto claro. */
+    background-color: #2c3e50; /* Cor primária escura no fim da layer */
+    color: #ecf0f1; 
 }
